@@ -45,6 +45,25 @@
     <Compile Include="m_website\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="music\static\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="music\static\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="music\static\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="music\static\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="music\static\bootstrap\css\bootstrap.css" />
+    <Content Include="music\static\bootstrap\css\bootstrap.css.map" />
+    <Content Include="music\static\bootstrap\css\bootstrap.min.css" />
+    <Content Include="music\static\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="music\static\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="music\static\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="music\static\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="music\static\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="music\static\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="music\static\bootstrap\js\bootstrap.js" />
+    <Content Include="music\static\bootstrap\js\bootstrap.min.js" />
+    <Content Include="music\static\bootstrap\js\jquery-1-9-1.min.js" />
+    <Content Include="music\static\bootstrap\js\npm.js" />
+    <Content Include="music\static\music\images\background.png" />
+    <Content Include="music\static\music\style.css" />
     <Content Include="music\templates\music\detail.html" />
     <Content Include="music\templates\music\index.html" />
     <Content Include="requirements.txt" />
@@ -52,6 +71,13 @@
   <ItemGroup>
     <Folder Include="music\" />
     <Folder Include="music\migrations\" />
+    <Folder Include="music\static\" />
+    <Folder Include="music\static\bootstrap\css\" />
+    <Folder Include="music\static\bootstrap\fonts\" />
+    <Folder Include="music\static\bootstrap\js\" />
+    <Folder Include="music\static\music\" />
+    <Folder Include="music\static\music\images\" />
+    <Folder Include="music\static\bootstrap\" />
     <Folder Include="music\templates\" />
     <Folder Include="music\templates\music\" />
     <Folder Include="m_website\" />

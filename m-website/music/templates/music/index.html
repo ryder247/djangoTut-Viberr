@@ -1,18 +1,35 @@
 <html>
 <head>
-    <title></title>
+    <title>Viberr</title>
+{% load staticfiles %} <!-- Used to load the path to all static files in the app.-->
+<link href="{% static 'bootstrap/css/bootstrap.css' %}" type="text/css" rel="stylesheet"/>
+<link href="{% static 'music/style.css' %}" type="text/css" rel="stylesheet"/>
 </head>
-
 <body>
+<!-- Making the nav-bar for the website -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        
+        <!--logo goes here -->
+        <div class="navbar-header">
+            <a href="{% url 'music:index' %}" class="navbar-brand">Viberr</a>
+        </div>
+
+
+    </div>
+</nav>
 {%if all_albums%}
 <h3> Here are all my albums: </h3>
 <ul>
     {% for album in all_albums %}
-        <li><a href="{%url 'music:detail' album.id%}"> {{ album.album_title }}</a></li>
+    <li><a href="{%url 'music:detail' album.id%}"> {{ album.album_title }}</a></li>
     {%endfor%}
 </ul>
 {%else%}
-    <h3>you don't have any albums yet...</h3>
+<h3>you don't have any albums yet...</h3>
 {%endif%}
+
+<script type="text/javascript" src="{% static 'bootstrap/js/jquery-1-9-1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </body>
 </html>
