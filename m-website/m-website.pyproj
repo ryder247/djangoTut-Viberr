@@ -45,13 +45,15 @@
     <Compile Include="m_website\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="music\templates\index.html" />
+    <Content Include="music\templates\music\detail.html" />
+    <Content Include="music\templates\music\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="music\" />
     <Folder Include="music\migrations\" />
     <Folder Include="music\templates\" />
+    <Folder Include="music\templates\music\" />
     <Folder Include="m_website\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
